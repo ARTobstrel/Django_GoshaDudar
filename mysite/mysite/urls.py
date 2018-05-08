@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('webexample/', include(('webexample.urls', 'webexample'), namespace='webexample')),
     path('', include(('mainApp.urls', 'mainApp'), namespace='mainApp')),
+    path('news/', include(('news.urls', 'news'), namespace='news')),
 ]

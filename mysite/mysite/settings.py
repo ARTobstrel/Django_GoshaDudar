@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # myapps
     'webexample',
     'mainApp',
+    'news',
 ]
 
 MIDDLEWARE = [
