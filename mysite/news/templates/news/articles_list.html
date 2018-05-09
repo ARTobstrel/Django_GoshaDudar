@@ -1,0 +1,12 @@
+{% extends 'mainApp/wrapper.html' %}
+
+{% block content %}
+<ul>
+{% for post in object_list %}
+    <a href="/news/{{ post.id }}"><h3>{{ post.title }}</h3></a>
+    <li>{{ post.pub_date|date }} - {{ post.headline }}</li>
+{% empty %}
+    <li>No articles yet.</li>
+{% endfor %}
+</ul>
+{% endblock %}
